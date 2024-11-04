@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <!-- Codificacion de caracteres -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Metadatos para mejorar la busqueda -->
+    <meta name="description" content="Página web de portafolio acerca de la ingeniería inversa o reverse engineering">
+    <meta name="author" content="Ivan Sanchez">
+    <meta name="keywords" content="Programación, HTML, CSS, JavaScript, Ingeniería inversa, Portafolio">
+    <title>Contacto - Arte de lo Inverso</title>
+    <!-- Icono de la pagina -->
+    <link rel="icon" href="/Portafolio2/Inverse (2).png" type="image/png">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.5.0/font/bootstrap-icons.min.css">
+    <!-- Hoja de estilos CSS personalizada -->
+    <link rel="stylesheet" href="/Portafolio2/styles.css">
+</head>
+
+<body>
+    <!-- Navbar o barra de navegacion -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand" href="/Portafolio2/index.html">Arte de lo Inverso</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Portafolio2/index.html"><i class="bi bi-house"></i> Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Portafolio2/noticias.html"><i class="bi bi-newspaper"></i>
+                            Artículos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Portafolio2/privacidad.html"><i class="bi bi-file-earmark-text"></i>
+                            Privacidad</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Portafolio2/enlaces.html"><i class="bi bi-link"></i> Enlaces</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="/Portafolio2/contacto.html"><i class="bi bi-people"></i>
+                            Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Boton para activar el modo oscuro/claro -->
+    <div class="dark-mode-toggle">
+        <button id="themeToggle" class="btn btn-light">
+            <i class="bi bi-sun-fill" id="toggleIcon"></i>
+        </button>
+    </div>
+
+    <!-- Informacion de contacto (Seccion de contactos) -->
+    <div class="container mt-5">
+        <h1 class="text-center section-title">Información de Contacto</h1>
+        <p class="text-center">Para consultas, colaboración o información adicional, puede comunicarse con nosotros a
+            través de los siguientes medios:</p>
+        <ul class="list-unstyled contact-info">
+            <li><i class="bi bi-geo-alt-fill"></i> Dirección: 1/2, Av. John F. Kennedy 7, Santo Domingo 10203</li>
+            <li><i class="bi bi-telephone-fill"></i> Teléfono: +809 493 5239</li>
+            <li><i class="bi bi-envelope-fill"></i> Correo Electrónico: info@artedeloInverso.com</li>
+            <li><i class="bi bi-clock-fill"></i> Horario de Atención: Lunes a Viernes, 9:00 am - 6:00 pm</li>
+        </ul>
+        <div class="social-links">
+            <p>Síganos en nuestras redes sociales:</p>
+            <a href="https://www.facebook.com/profile.php?id=61560885230201&mibextid=LQQJ4d" class="me-3"
+                target="_blank">
+                <i class="bi bi-facebook"></i> Facebook
+            </a>
+            <a href="https://www.instagram.com/tu-perfil" class="me-3" target="_blank">
+                <i class="bi bi-instagram"></i> Instagram
+            </a>
+            <a href="https://twitter.com/tu-perfil" target="_blank">
+                <i class="bi bi-twitter"></i> Twitter
+            </a>
+        </div>
+
+        <!-- Seccion de contacto -->
+        <div class="container mt-5">
+            <h1 class="text-center section-title">Contáctenos</h1>
+            <p class="text-center">Si tiene preguntas o comentarios, no dude en contactarnos.</p>
+
+            <!-- Formulario de contacto (con un mailto) -->
+            <form id="contactForm" class="mt-4">
+                <div class="mb-3">
+                    <label for="name" class="form-label">Nombre</label>
+                    <input type="text" class="form-control" id="name" required>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Correo Electrónico</label>
+                    <input type="email" class="form-control" id="email" required>
+                </div>
+                <div class="mb-3">
+                    <label for="message" class="form-label">Mensaje</label>
+                    <textarea class="form-control" id="message" rows="3" required></textarea>
+                </div>
+                <button type="button" class="btn btn-primary" onclick="sendEmail()">Enviar Correo</button>
+            </form>
+        </div>
+
+        <!-- Modal para el formulario de contacto -->
+        <div class="modal fade" id="successModal" tabindex="-1" aria-labelledby="successModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="successModalLabel">Éxito</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        Su mensaje ha sido enviado correctamente.
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer o Pie de pagina -->
+        <footer class="bg-dark text-light text-center py-3 mt-5">
+            <p>&copy; 2024 Ivan Sanchez - Todos los derechos reservados.</p>
+            <div>
+                <!-- Enlaces a redes sociales (Solo el facebook es real, lo otro no jaja) -->
+                <a href="https://www.facebook.com/profile.php?id=61560885230201&mibextid=LQQJ4d" class="text-light me-3"
+                    target="_blank"><i class="bi bi-facebook"></i></a>
+                <a href="https://www.instagram.com/artedeloinverso" class="text-light me-3" target="_blank"><i
+                        class="bi bi-instagram"></i></a>
+                <a href="https://twitter.com/artedeloinverso" class="text-light" target="_blank"><i
+                        class="bi bi-twitter"></i></a>
+            </div>
+        </footer>
+
+        <!-- Bootstrap Scripts -->
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Archivo de JavaScript personalizado -->
+        <script src="/Portafolio2/scripts.js"></script>
+
+</body>
+
+</html>
