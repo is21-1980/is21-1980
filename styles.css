@@ -5,7 +5,7 @@ body {
 
 /* Seccion de presentacion */
 .hero {
-    background: url('/Portafolio2/reverse-engineering.jpg') no-repeat center center;
+    background: url('reverse-engineering.jpg') no-repeat center center;
     background-size: cover;
     height: 60vh;
     display: flex;
