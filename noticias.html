@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <!-- Codificacion de caracteres -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Metadatos para mejorar la busqueda -->
+    <meta name="description" content="Página web de portafolio acerca de la ingeniería inversa o reverse engineering">
+    <meta name="author" content="Ivan Sanchez">
+    <meta name="keywords" content="Programación, HTML, CSS, JavaScript, Ingeniería inversa, Portafolio">
+    <title>Artículos - Arte de lo Inverso</title>
+    <!-- Icono de la pagina -->
+    <link rel="icon" href="/Portafolio2/Inverse (2).png" type="image/png">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.5.0/font/bootstrap-icons.min.css">
+    <!-- Hoja de estilos CSS personalizada -->
+    <link rel="stylesheet" href="/Portafolio2/styles.css">
+</head>
+
+<body>
+    <!-- Navbar o barra de navegacion -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand" href="/Portafolio2/index.html">Arte de lo Inverso</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Portafolio2/index.html"><i class="bi bi-house"></i> Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="/Portafolio2/noticias.html"><i class="bi bi-newspaper"></i>
+                            Artículos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Portafolio2/privacidad.html"><i class="bi bi-file-earmark-text"></i>
+                            Privacidad</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Portafolio2/enlaces.html"><i class="bi bi-link"></i> Enlaces</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Portafolio2/contacto.html"><i class="bi bi-people"></i> Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Boton para activar o desactivar el modo claro/oscuro -->
+    <div class="dark-mode-toggle">
+        <button id="themeToggle" class="btn btn-light">
+            <i class="bi bi-sun-fill" id="toggleIcon"></i>
+        </button>
+    </div>
+
+    <!-- Contenido principal (Seccion principal) -->
+    <main class="container mt-5">
+        <h1 class="text-center display-5 fw-bold mb-5">Artículos de Ingeniería Inversa</h1>
+
+        <!-- Alerta de bienvenida -->
+        <div class="alert alert-info" role="alert">
+            ^^Bienvenido a nuestra sección de artículos^^ Mantente informado sobre los últimos avances en ingeniería
+            inversa.
+        </div>
+
+        <!-- Sección de artículos -->
+        <section id="articulos" class="mt-5">
+            <h2 class="text-center mb-4 display-6 fw-bold">Artículos Destacados</h2>
+            <div class="row g-4">
+                <!-- Tarjeta de articulo #1 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 shadow-sm border-0 article-card">
+                        <img src="/Portafolio2/article1.jpg" class="card-img-top" alt="Artículo 1" />
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">Legalidad en US actualizada</h5>
+                            <p class="card-text">La ingeniería inversa es generalmente legal. En la ley de secretos
+                                comerciales...</p>
+                            <button class="btn btn-primary btn-detail" data-bs-toggle="modal"
+                                data-bs-target="#articleModal1">Leer más</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tarjeta de articulo #2 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 shadow-sm border-0 article-card">
+                        <img src="/Portafolio2/avances_articulo2.jpg" class="card-img-top" alt="Artículo 2" />
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">Avances en la Seguridad de Datos</h5>
+                            <p class="card-text">La ciberseguridad se ha convertido en un campo vital con nuevas
+                                innovaciones...</p>
+                            <button class="btn btn-primary btn-detail" data-bs-toggle="modal"
+                                data-bs-target="#articleModal2">Leer más</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tarjeta de articulo #3 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 shadow-sm border-0 article-card">
+                        <img src="/Portafolio2/ai_articulo2.jpg" class="card-img-top" alt="Artículo 3" />
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">Desarrollo de IA en la Medicina</h5>
+                            <p class="card-text">La inteligencia artificial está revolucionando el diagnóstico médico...
+                            </p>
+                            <button class="btn btn-primary btn-detail" data-bs-toggle="modal"
+                                data-bs-target="#articleModal3">Leer más</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Modal del primer articulo (#1) -->
+        <div class="modal fade" id="articleModal1" tabindex="-1" aria-labelledby="articleModalLabel1"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="articleModalLabel1">Legalidad en US actualizada</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>La ingeniería inversa significa que un método o proceso de desarrollo o fabricación de un
+                            producto conocido se descubrió mediante "trabajo a la inversa". La ingeniería inversa se
+                            utiliza
+                            a menudo en el desarrollo de máquinas, el mantenimiento de software y muchas otras áreas.
+                        </p>
+                        <p>La ingeniería inversa es generalmente legal. En la ley de secretos comerciales, al igual que
+                            en
+                            el desarrollo independiente, se considera un método permitido para descubrir un secreto
+                            comercial. Sin embargo, en la ley de patentes, debido a que el propietario de la patente
+                            tiene
+                            derechos exclusivos para usar, poseer o desarrollar la patente, la ingeniería inversa no es
+                            una
+                            defensa.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal del segundo articulo (#2) -->
+        <div class="modal fade" id="articleModal2" tabindex="-1" aria-labelledby="articleModalLabel2"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="articleModalLabel2">Avances en la Seguridad de Datos</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>La ciberseguridad es una preocupación importante en el mundo actual, y los expertos están
+                            constantemente trabajando para proteger la información y los sistemas de amenazas cada vez
+                            más
+                            sofisticadas.</p>
+                        <p>Con el aumento de la digitalización y la interconexión de dispositivos a través de Internet,
+                            la
+                            cantidad de datos sensibles en circulación ha crecido exponencialmente. Esto ha llevado a un
+                            incremento en los ciberataques, que pueden tener consecuencias devastadoras.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal del tercer articulo (#3) -->
+        <div class="modal fade" id="articleModal3" tabindex="-1" aria-labelledby="articleModalLabel3"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="articleModalLabel3">Desarrollo de IA en la Medicina</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>La inteligencia artificial se ha convertido en una herramienta poderosa en el sector de la
+                            salud,
+                            transformando la manera en que se diagnostican y tratan enfermedades. Gracias a su capacidad
+                            para analizar grandes volúmenes de datos, la IA está ayudando a los médicos a tomar
+                            decisiones
+                            más informadas y rápidas.</p>
+                        <p>Las aplicaciones de la IA en la medicina son diversas, desde sistemas de apoyo a la decisión
+                            clínica hasta el desarrollo de tratamientos personalizados basados en la genética del
+                            paciente.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Sección de Opiniones de Expertos -->
+        <section id="opiniones-expertos" class="mt-5">
+            <h2 class="text-center mb-4 display-6 fw-bold">Opiniones de Expertos</h2>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 shadow-sm border-0 article-card">
+                        <img src="/Portafolio2/experto1.jpg" class="card-img-top" alt="Experto 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Dr. Juan Pérez</h5>
+                            <p class="card-text">"La ingeniería inversa es fundamental para la innovación en
+                                tecnología."</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 shadow-sm border-0 article-card">
+                        <img src="/Portafolio2/experto2.jpg" class="card-img-top" alt="Experto 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Dra. Ana Gómez</h5>
+                            <p class="card-text">"El entendimiento de sistemas complejos comienza con la ingeniería
+                                inversa."</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 shadow-sm border-0 article-card">
+                        <img src="/Portafolio2/experto3.jpg" class="card-img-top" alt="Experto 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Ing. Luis Martínez</h5>
+                            <p class="card-text">"Las herramientas de ingeniería inversa son esenciales para los
+                                analistas de seguridad."</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer o Pie de pagina -->
+    <footer class="bg-dark text-light text-center py-3 mt-5">
+        <p>&copy; 2024 Ivan Sanchez - Todos los derechos reservados.</p>
+        <div>
+            <!-- Enlaces a redes sociales (Solo el facebook es real, lo otro no jaja) -->
+            <a href="https://www.facebook.com/profile.php?id=61560885230201&mibextid=LQQJ4d" class="text-light me-3" target="_blank"><i class="bi bi-facebook"></i></a>
+            <a href="https://www.instagram.com/artedeloinverso" class="text-light me-3" target="_blank"><i class="bi bi-instagram"></i></a>
+            <a href="https://twitter.com/artedeloinverso" class="text-light" target="_blank"><i class="bi bi-twitter"></i></a>
+        </div>
+    </footer>
+
+    <!-- Bootstrap Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Archivo de JavaScript personalizado -->
+    <script src="/Portafolio2/scripts.js"></script>
+</body>
+
+</html>
