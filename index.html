@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <!-- Codificacion de caracteres -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Metadatos para mejorar la busqueda -->
+    <meta name="description" content="Pagina web de portafolio acerca de la ingenieria inversa o reverse engineering">
+    <meta name="author" content="Ivan Sanchez">
+    <meta name="keywords" content="Programación, HTML, CSS, JavaScript, Ingenieria inversa, Portafolio">
+    <title>Arte de lo Inverso</title>
+    <!-- Icono de la pagina -->
+    <link rel="icon" href="/Portafolio2/Inverse (2).png" type="image/png">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.5.0/font/bootstrap-icons.min.css">
+    <!-- Hoja de estilos CSS personalizada -->
+    <link rel="stylesheet" href="/Portafolio2/styles.css">
+</head>
+
+<body>
+    <!-- Navbar o Barra de navegacion -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand" href="/Portafolio2/index.html">Arte de lo Inverso</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="/Portafolio2/index.html"><i class="bi bi-house"></i> Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Portafolio2/noticias.html"><i class="bi bi-newspaper"></i>
+                            Artículos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Portafolio2/privacidad.html"><i class="bi bi-file-earmark-text"></i>
+                            Privacidad</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Portafolio2/enlaces.html"><i class="bi bi-link"></i> Enlaces</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Portafolio2/contacto.html"><i class="bi bi-people"></i> Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Boton para cambiar a modo oscuro/claro -->
+    <div class="dark-mode-toggle">
+        <button id="themeToggle" class="btn btn-light">
+            <i class="bi bi-sun-fill" id="toggleIcon"></i>
+        </button>
+    </div>
+    <!-- Seccion de presentacion -->
+    <header class="hero text-center text-light d-flex align-items-center justify-content-center">
+        <h1 class="display-4 fw-bold">"Descubre el Arte Oculto de la Ingeniería Inversa sin invertir tu mente"</h1>
+    </header>
+
+    <!-- Contenido principal -->
+    <main class="container mt-5">
+        <!-- Sección: ¿Qué es la Ingeniería Inversa? -->
+        <section id="what-is-reverse-engineering" class="text-center mb-5">
+            <h2 class="display-6 fw-bold mb-4">¿Qué es la Ingeniería Inversa?</h2>
+            <p class="lead">La ingeniería inversa es un proceso o método mediante el cual se intenta comprender
+                mediante razonamiento deductivo cómo un dispositivo, proceso, sistema o pieza de software previamente
+                creado realiza una tarea con muy poca (o ninguna) comprensión de cómo lo hace exactamente. Dependiendo
+                del sistema en consideración y las tecnologías empleadas, el conocimiento adquirido durante la
+                ingeniería inversa puede ayudar a reutilizar objetos obsoletos, realizar análisis de seguridad o
+                aprender cómo funciona algo.</p>
+        </section>
+
+        <!-- Sección de Carrusel -->
+        <section class="mb-5">
+            <div id="infoCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="/Portafolio2/concepto.jpg" class="d-block w-100 img-fluid"
+                            alt="Definición de Ingeniería Inversa">
+                        <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-75 p-3 rounded">
+                            <h5>Conceptos importantes</h5>
+                            <p>Mecanismo de Antikythera, Inducción hacia atrás, Analizador de bus, Deformulación, entre
+                                otros.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="/Portafolio2/metodos.jpg" class="d-block w-100 img-fluid"
+                            alt="Métodos de Ingeniería Inversa">
+                        <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-75 p-3 rounded">
+                            <h5>Métodos Utilizados</h5>
+                            <p>Descompilación, análisis binario y observación de comportamiento del software.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="/Portafolio2/aplicaciones.jpg" class="d-block w-100 img-fluid"
+                            alt="Aplicaciones de la Ingeniería Inversa">
+                        <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-75 p-3 rounded">
+                            <h5>Aplicaciones</h5>
+                            <p>Ideal en auditorías de seguridad, optimización y recuperación de datos.</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#infoCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#infoCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Siguiente</span>
+                </button>
+            </div>
+        </section>
+        <!-- Sección de Historia -->
+        <section id="historia" class="mt-5">
+            <h2 class="text-center mb-4 display-6 fw-bold">Historia de la Ingeniería Inversa</h2>
+            <div class="row align-items-center">
+                <!-- Columna de Texto -->
+                <div class="col-lg-8">
+                    <p>Aunque mucha gente cree que la ingeniería inversa empezó en el siglo XVIII con el nacimiento del
+                        sistema
+                        fabril, no es así. De hecho, la ingeniería inversa existe desde el principio, cuando los seres
+                        humanos
+                        fabricaban cosas, como ruedas, carruajes e incluso infraestructuras arquitectónicas. Para
+                        recrear estos
+                        objetos, se utilizaba la ingeniería inversa, tan rudimentaria como era en su época. Se tomaban
+                        las
+                        dimensiones del objeto, ya fuera en su totalidad o en partes, y se reconstruían.</p>
+                    <p> Por ejemplo, el ejército romano, que no contó con una armada permanente hasta después de la
+                        Primera
+                        Guerra Púnica, fue capaz de diseñar a la inversa un quinquerreme cartaginés en el año 264 a. C.
+                        Gracias
+                        al reconocido ingenio de los romanos, crearon y optimizaron una flota de 300 barcos en tres
+                        meses que
+                        era capaz de superar a la flota cartaginesa en número y en complejas maniobras navales.</p>
+                    <p> Las técnicas de ingeniería inversa han evolucionado mucho desde aquellas épocas pasadas. Si bien
+                        la
+                        ingeniería inversa puede haber comenzado con aplicaciones militares, ahora es útil en muchos
+                        campos
+                        diferentes, incluida la fabricación.</p>
+                        </div>
+                    <!-- Columna de Imagen -->
+                    <div class="col-lg-4 text-center">
+                        <img src="/Portafolio2/imagen-responsive.png" alt="Ilustración de la ingeniería inversa"
+                            class="img-fluid historia-img" />
+                    </div>
+                </div>
+        </section>
+        <br>
+        <br>
+
+        <!-- Cuadrícula de Información -->
+        <section id="info-grid">
+            <h2 class="text-center mb-4 display-6 fw-bold">Aspectos Fascinantes de la Ingeniería Inversa</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm border-0">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">Cultura del Hacking</h5>
+                            <p class="card-text">La ingeniería inversa ha creado una comunidad apasionada que explora
+                                software y videojuegos para revelar secretos, mejorar el rendimiento y desarrollar mods
+                                únicos.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm border-0">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">Técnicas Populares</h5>
+                            <ul class="list-unstyled">
+                                <li><i class="bi bi-check-circle-fill"></i> Inyección de código para cambiar funciones.
+                                </li>
+                                <br>
+                                <li><i class="bi bi-check-circle-fill"></i> Análisis de paquetes para interceptar datos.
+                                </li>
+                                <br>
+                                <li><i class="bi bi-check-circle-fill"></i> Parches binarios para alterar
+                                    comportamientos.</li>
+                                <br>
+                                <li><i class="bi bi-check-circle-fill"></i> Control y acceso al direccionamiento de
+                                    memoria.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm border-0">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">El Debate Ético</h5>
+                            <p class="card-text">¿Arte o delito? Mientras algunos ven la ingeniería inversa como una
+                                herramienta creativa, otros argumentan que puede dañar a los desarrolladores,
+                                especialmente en contextos de piratería o trampas en línea.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <!-- Footer o Pie de pagina -->
+    <footer class="bg-dark text-light text-center py-3 mt-5">
+        <p>&copy; 2024 Ivan Sanchez - Todos los derechos reservados.</p>
+        <div>
+            <!-- Enlaces a redes sociales (Solo el facebook es real, lo otro no jaja) -->
+            <a href="https://www.facebook.com/profile.php?id=61560885230201&mibextid=LQQJ4d" class="text-light me-3" target="_blank"><i class="bi bi-facebook"></i></a>
+            <a href="https://www.instagram.com/artedeloinverso" class="text-light me-3" target="_blank"><i class="bi bi-instagram"></i></a>
+            <a href="https://twitter.com/artedeloinverso" class="text-light" target="_blank"><i class="bi bi-twitter"></i></a>
+        </div>
+    </footer>
+
+    <!-- Bootstrap Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Archivo JavaScript personalizado -->
+    <script src="/Portafolio2/scripts.js"></script>
+</body>
+
+</html>
