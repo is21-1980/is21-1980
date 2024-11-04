@@ -1,0 +1,384 @@
+/* Fuente general */
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Seccion de presentacion */
+.hero {
+    background: url('/Portafolio2/reverse-engineering.jpg') no-repeat center center;
+    background-size: cover;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    text-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+/* Estilo de carrusel */
+.carousel-inner img {
+    height: 500px;
+    object-fit: cover;
+}
+
+/* Estilo de cuadricula de informacion */
+.info-grid .card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.info-grid .card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer o Pie de pagina estilos */
+footer {
+    background-color: #333;
+    color: #bbb;
+}
+
+/* Estilo de la navbar o barra de navegacion */
+.navbar {
+    transition: background-color 0.3s ease;
+}
+
+/* Color y estilos de los links de la navbar */
+.navbar-dark .navbar-nav .nav-link {
+    color: #ddd;
+    padding: 10px 15px;
+    transition: color 0.3s ease, background-color 0.3s ease, transform 0.3s ease;
+    font-size: 1.1rem;
+}
+
+/* Efecto de hover con "salto" para los links de navegación */
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.25);
+    border-radius: 5px;
+    transform: scale(1.1);
+    /* Efecto de salto */
+}
+
+/* Link o seccion activa (efecto) */
+.navbar-dark .navbar-nav .nav-link.active {
+    color: #ffffff;
+    font-weight: bold;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 5px;
+}
+
+/* Estilo de iconos */
+.navbar-dark .navbar-nav .nav-link i {
+    margin-right: 5px;
+    font-size: 1.2rem;
+}
+
+/* Fuente de texto general */
+body {
+    font-family: 'Roboto', sans-serif;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.dark-mode {
+    background-color: #121212;
+    color: #f1f1f1;
+}
+
+.light-mode {
+    background-color: #ffffff;
+    color: #333333;
+}
+
+/* Barra de navegacion o Navbar */
+.navbar,
+footer {
+    transition: background-color 0.3s ease;
+}
+
+.dark-mode .navbar,
+.dark-mode footer {
+    background-color: #333;
+}
+
+.light-mode .navbar,
+.light-mode footer {
+    background-color: #f8f9fa;
+}
+
+/* Estilos para el modo claro */
+.light-mode #info-grid .card {
+    background-color: #ffffff;
+    /* Fondo blanco para modo claro */
+    color: #333333;
+    /* Texto oscuro */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    /* Sombra ligera */
+}
+
+/* Estilos para el modo oscuro */
+.dark-mode #info-grid .card {
+    background-color: #444444;
+    /* Fondo gris oscuro para modo oscuro */
+    color: #dddddd;
+    /* Texto claro */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    /* Sombra más pronunciada */
+}
+
+/* Efecto hover */
+#info-grid .card:hover {
+    transform: scale(1.05);
+    /* Aumento de tamaño al pasar el mouse */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    /* Sombra en hover */
+}
+
+
+/* Ajustes generales para modo claro y oscuro */
+.article-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Estilo en modo claro */
+.light-mode .article-card {
+    background-color: #ffffff;
+    color: #333;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.light-mode .modal-content {
+    background-color: #ffffff;
+    color: #333;
+}
+
+/* Estilo en modo oscuro */
+.dark-mode .article-card {
+    background-color: #444;
+    color: #f1f1f1;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+.dark-mode .modal-content {
+    background-color: #333;
+    color: #ddd;
+}
+
+/* Efecto hover para las tarjetas */
+.article-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Estiliza las tarjetas */
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Estiliza el modal */
+.modal-content {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: transform 0.3s ease;
+}
+
+.modal-content img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.modal-content p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+/* Animación del modal */
+.modal.fade .modal-dialog {
+    transform: translateY(-50px);
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+.modal.show .modal-dialog {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+/* Estilos para el contenido de la tarjeta en modo claro */
+.light-mode .card {
+    background-color: #ffffff; /* Fondo blanco */
+    color: #333333; /* Texto oscuro */
+}
+
+/* Estilos para el contenido de la tarjeta en modo oscuro */
+.dark-mode .card {
+    background-color: #444444; /* Fondo gris oscuro */
+    color: #dddddd; /* Texto claro */
+}
+
+.iframe-container {
+    border: 1px solid #dee2e6;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+.iframe-container iframe {
+    width: 100%;
+    height: 300px;
+    border: none;
+}
+
+.section-title {
+    margin-top: 30px;
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+    color: #343a40;
+}
+
+/* Cambiar el color de .section-title en modo oscuro */
+body.dark-mode .section-title {
+    color: #bbb; /* Cambia el color del texto a blanco */
+}
+
+
+.resource-card {
+    border: 1px solid #dee2e6;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    transition: transform 0.2s;
+}
+.resource-card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilo de la imagen para modo claro */
+.light-mode .historia-img {
+    filter: brightness(100%);
+}
+
+/* Estilo de la imagen para modo oscuro */
+.dark-mode .historia-img {
+    filter: brightness(70%);
+}
+
+
+/* Button Styling */
+.dark-mode-toggle {
+    position: fixed;
+    top: 80px;
+    right: 10px;
+    z-index: 1000;
+}
+
+/* Estilos para la sección de redes sociales */
+.social-links a {
+    font-weight: bold;
+    color: #007bff; /* Color predeterminado para el modo claro */
+    text-decoration: none;
+    margin-right: 1rem;
+    display: inline-flex;
+    align-items: center;
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.social-links a i {
+    margin-right: 0.3rem;
+}
+
+.social-links a:hover {
+    color: #fff; /* Cambiar el color del texto al pasar el mouse */
+    background-color: #007bff; /* Fondo azul en hover */
+    padding: 0.3rem 0.6rem;
+    border-radius: 5px;
+}
+
+/* Modo oscuro para la sección de redes sociales */
+.dark-mode .social-links a {
+    color: #a9b2bc; /* Color claro para el texto en modo oscuro */
+}
+
+.dark-mode .social-links a:hover {
+    color: #007bff; /* Color azul al pasar el mouse en modo oscuro */
+    background-color: #333; /* Fondo oscuro en hover */
+}
+
+/* Estilos para redes sociales en modo claro */
+.social-links a {
+    color: #333; /* Color oscuro para modo claro */
+    transition: color 0.3s, background-color 0.3s;
+}
+
+.social-links a:hover {
+    color: #0056b3; /* Cambia el color al pasar el mouse en modo claro */
+    background-color: #e6e6e6; /* Fondo claro en hover */
+    padding: 5px;
+    border-radius: 5px;
+}
+
+/* Estilos para redes sociales en modo oscuro */
+.dark-mode .social-links a {
+    color: #ddd; /* Color claro para modo oscuro */
+}
+
+.dark-mode .social-links a:hover {
+    color: #fff; /* Cambia a blanco al pasar el mouse en modo oscuro */
+    background-color: #444; /* Fondo oscuro en hover */
+    padding: 5px;
+    border-radius: 5px;
+}
+
+/* Efectos hover en la sección de información de contacto */
+.contact-info li {
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.contact-info li:hover {
+    color: #007bff;
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 0.3rem 0.6rem;
+    border-radius: 5px;
+}
+
+
+#themeToggle {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    transition: background-color 0.3s ease;
+}
+
+#themeToggle .bi {
+    font-size: 1.5rem;
+}
+
+#themeToggle.bi-sun-fill {
+    color: #f39c12;
+    /* Color de sol */
+}
+
+#themeToggle.bi-moon-fill {
+    color: #3498db;
+    /* Color de luna */
+}
+
+/* Animacion */
+@keyframes rotate-icon {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+#themeToggle i {
+    animation: rotate-icon 0.5s ease;
+}
